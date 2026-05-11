@@ -60,9 +60,10 @@ This may help determine whether nonlinear structural features are stable early-w
 
 ### How to Reproduce work?
 #### Datasets
+#### Running data_acquisition.py will automatically download the datasets (excluding HY OAS)
 - Datasets from Federal Reserve Bank of St. Louis, FRED
 1. spread_10y2y.csv ([Link](https://fred.stlouisfed.org/series/T10Y2Y))
-2. hy_oas.csv (Very very unfortunatly, FRED no longer provide data the last more than 3 years since April of 2026. FRED also does not allow reproduce or redistribute the data by Copyright, 2023, ICE Data Indices. Please [contact](https://fred.stlouisfed.org/contactus/) FRED.)
+2. hy_oas.csv (Very very unfortunatly, FRED no longer provide data the last more than 3 years since April of 2026. FRED also does not allow reproduce or redistribute the data by Copyright, 2023, ICE Data Indices. Please [contact](https://fred.stlouisfed.org/contactus/) FRED. Please place inside /data folder if you have the dataset)
 - Datasets from yfinance library
 3. CBOE_SKEW_Full_2000_2026.csv
 4. VIX.csv
