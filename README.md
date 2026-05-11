@@ -20,7 +20,7 @@ We focus on two main research questions:
  
 Four market-based stress proxies: **VIX** (equity volatility), **OAS** (credit stress), **SKEW** (tail-risk pricing), **OFR FSI** (broad systemic stress). Daily frequency, sourced from CBOE and the Office of Financial Research.
  
-High-stress events defined via 90th/95th percentile thresholds of VIX and OFR FSI.
+High-stress events defined via 90th/95th percentile thresholds of VIX and OFR FSI, and 95th percentile thresholds of OAS and SKEW.
  
 ## Methodology
 
