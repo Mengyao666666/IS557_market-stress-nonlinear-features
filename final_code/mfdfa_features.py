@@ -16,9 +16,9 @@ from datetime import datetime as dt
 #drive.mount('/content/drive')
 
 # File Paths
-script_path = "/content/drive/MyDrive/557project/final_code/"
-data_path = "/content/drive/MyDrive/557project/data/"
-output_path = "/content/drive/MyDrive/557project/outputs/"
+script_path = "final_code/"
+data_path = "data/"
+output_path = "outputs/"
 
 # Load the datasets
 df = pd.read_csv(data_path + "4columns_na_dropped.csv")

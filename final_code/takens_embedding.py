@@ -15,9 +15,9 @@ import matplotlib.pyplot as plt
 #from google.colab import drive
 
 # File Paths
-script_path = "/content/drive/MyDrive/557project/final_code/"
-data_path = "/content/drive/MyDrive/557project/data/"
-output_path = "/content/drive/MyDrive/557project/outputs/"
+script_path = "final_code/"
+data_path = "data/"
+output_path = "outputs/"
 
 #drive.mount('/content/drive')
 
