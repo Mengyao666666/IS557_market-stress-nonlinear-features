@@ -14,3 +14,7 @@ python final_code/takens_embedding.py
 python final_code/cpd_pipeline.py
 python final_code/logreg_pipeline.py
 ```
+
+
+#### AI Usage
+- Our projects done by Python codes, and they are assisted by ChatGPT and GitHub Copilot
