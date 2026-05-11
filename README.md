@@ -58,6 +58,31 @@ Future work could evaluate the framework separately across different periods, su
 
 This may help determine whether nonlinear structural features are stable early-warning signals or whether their usefulness changes across market regimes.
 
+### How to Reproduce work?
+#### Datasets
+- Datasets from Federal Reserve Bank of St. Louis, FRED
+1. spread_10y2y.csv ([Link](https://fred.stlouisfed.org/series/T10Y2Y))
+2. hy_oas.csv (Very very unfortunatly, FRED no longer provide data the last more than 3 years since April of 2026. FRED also does not allow reproduce or redistribute the data by Copyright, 2023, ICE Data Indices. Please [contact](https://fred.stlouisfed.org/contactus/) FRED.)
+- Datasets from yfinance library
+3. CBOE_SKEW_Full_2000_2026.csv
+4. VIX.csv
+
+#### Reproduction Script Order
+1. data_acquisition.py
+2. mfdfa_features.py
+3. takens_embedding.py
+4. cpd_pipeline.py
+5. logreg_pipeline.py
+
+- In command shell main directory
+
+```
+python final_code/data_acquisition.py
+python final_code/mfdfa_features.py
+python final_code/takens_embedding.py
+python final_code/cpd_pipeline.py
+python final_code/logreg_pipeline.py
+```
 
 
 #### AI Usage
