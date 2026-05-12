@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 
 # File Paths
 script_path = "final_code/"
-data_path = "data/"
-output_path = "outputs/"
+data_path = "../data/"
+output_path = "../outputs/"
 
 #drive.mount('/content/drive')
 
@@ -479,6 +479,16 @@ with open(output_path + "takens_embedding_summaries.txt", "a") as f:
     f.write(ablation_summary4.to_string(index=False))
 
 # Change Point Detection result
+dim_cpd = dimension.dropna(subset=["corr_dim"]).sort_values("end_date").copy()
+
+X = dim_cpd[["corr_dim"]].values
+
+for pen in [0.05, 0.1, 0.2, 0.5]:
+    bkps = rpt.Pelt(model="l2", min_size=5).fit(X).predict(pen=pen)
+    with open(output_path + "takens_embedding_breakpoints.csv", "w") as f:    
+        f.write(f"pen = {pen}, n_breaks = {len(bkps) - 1}\n")
+    print("pen =", pen, "n_breaks =", len(bkps) - 1)
+
 rows = []
 
 for pen in [0.05, 0.1, 0.2]:
